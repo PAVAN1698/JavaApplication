@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="sav_acc" class="com.spring.banking.Account">
+<property name="Acc_no" value="68484521"/>
+<property name="Acc_bal" value="650014"/>
+</bean>
+
+<bean id="cur_acc" class="com.spring.banking.Account">
+<property name="Acc_no" value="85784485"/>
+<property name="Acc_bal" value="685414"/>
+</bean>
+
+<bean id="Savings" class="com.spring.banking.SavingsAccount" autowire="byName">
+</bean>
+
+<bean id="Current" class="com.spring.banking.CurrentAccount" autowire="byName">
+</bean>
+
+</beans>
